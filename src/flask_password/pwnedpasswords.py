@@ -20,7 +20,7 @@ def _download(url: str) -> str:
     return res
 
 
-def haveibeenpwned(password: str) -> int:
+def haveibeenpwned(password: str) -> bool:
     """
     This function takes a password string as an input and returns True if the *password*
     appears in PwnedPasswords.
