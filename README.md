@@ -10,7 +10,7 @@ flask-password is a Flask extension that provides modern password hashing utilit
 Install the extension with the following command:
 
 ```
-$ pip install flask-password
+pip install git+https://github.com/oittaa/flask-password.git
 ```
 
 ## Usage
