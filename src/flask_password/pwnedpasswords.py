@@ -15,10 +15,12 @@ HEADERS = {"User-Agent": "Flask-Password"}
 @lru_cache
 def _download(url: str) -> str:
     req = Request(url=url, headers=HEADERS)
-    return urlopen(req).read().decode("utf-8")
+    with urlopen(req) as f:
+        res = f.read().decode("utf-8")
+    return res
 
 
-def haveibeenpwned(password: str) -> int:
+def haveibeenpwned(password: str) -> bool:
     """
     This function takes a password string as an input and returns True if the *password*
     appears in PwnedPasswords.
