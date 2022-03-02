@@ -2,6 +2,9 @@
 
 flask-password is a Flask extension that provides modern password hashing utilities for your Flask app.
 
+[![CI](https://github.com/oittaa/flask-password/actions/workflows/main.yml/badge.svg)](https://github.com/oittaa/flask-password/actions/workflows/main.yml)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
 ## Installation
 
 Install the extension with the following command:
